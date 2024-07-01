@@ -1,39 +1,69 @@
-<html>
-  <body style="background-color: #C3B1E1;">
-  <head>
-    <!--Buttons below-->
-    <button>About Me</button>
-    <button>Portfolio</button>
-    <button>Contact</button>
-    <!--End of Buttons-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <!--Tab Title-->
-    <title>My Work Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!--Tab Title End-->
-  </head>
-  <Header>
-   <!-- <nav>
-      <ul>
-        <li><a href="#name">Amy Kelley</a></li>
-      </ul>
-    </nav> -->
-  </Header>
-  <body>
-    <main>
-      <section id="about">
-        <h1>About Me</h1>
-        <p>Insert summary about yourself here.</p>
-      </section>
-      <section id="resume">
-        <h1>Resume</h1>
-        <a href="file:///C:/Users/amyke/OneDrive/Documents/Job%20Papers/AmyKelley_Resume_VGI.pdf" download="AmyKelley_Resume_VGI.pdf">Download my Resume Here</a>
-      </section>
-    </main>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my works in code and video games</p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="tab-container">
+            <input type="radio" name="tab" id="tab1" checked>
+            <label for="tab1">Project 1</label>
+            <input type="radio" name="tab" id="tab2">
+            <label for="tab2">Project 2</label>
+            <input type="radio" name="tab" id="tab3">
+            <label for="tab3">Project 3</label>
+            <!-- Add more tabs as needed -->
+
+            <div class="tab-content" id="project1">
+                <h3>Project 1 Title</h3>
+                <img src="images/project1.png" alt="Project 1 Screenshot">
+                <p>Project 1 description goes here. Explain what the project is about and what technologies were used.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View Code</a>
+            </div>
+            <div class="tab-content" id="project2">
+                <h3>Project 2 Title</h3>
+                <img src="images/project2.png" alt="Project 2 Screenshot">
+                <p>Project 2 description goes here. Explain what the project is about and what technologies were used.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View Code</a>
+            </div>
+            <div class="tab-content" id="project3">
+                <h3>Project 3 Title</h3>
+                <img src="images/project3.png" alt="Project 3 Screenshot">
+                <p>Project 3 description goes here. Explain what the project is about and what technologies were used.</p>
+                <a href="https://github.com/yourusername/project3" target="_blank">View Code</a>
+            </div>
+            <!-- Add more project divs as needed -->
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief introduction about yourself, your skills, and your experience.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+    </section>
     <footer>
-      <p>&copy; Amy Kelley </p>
-       <p>All content and trademarks property of their respective owners.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
