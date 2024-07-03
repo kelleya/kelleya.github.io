@@ -1,19 +1,25 @@
+/* Reset some basic elements */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 
+/* Body style for dark mode */
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
 }
 
+/* Header style for dark mode */
 header {
-    background: #333;
-    color: #fff;
+    background: #1e1e1e; /* Darker background */
+    color: #e0e0e0; /* Light text color */
     padding: 1rem 0;
 }
 
+/* Navigation style */
 nav ul {
     list-style: none;
     display: flex;
@@ -25,15 +31,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #e0e0e0; /* Light text color */
     text-decoration: none;
 }
 
+/* Section styling */
 section {
     padding: 2rem;
     text-align: center;
 }
 
+/* Tab container and labels for dark mode */
 .tab-container {
     display: flex;
     flex-direction: column;
@@ -45,36 +53,40 @@ section {
 }
 
 .tab-container label {
-    background-color: #007bff;
-    color: #333;
+    background-color: #333; /* Darker background */
+    color: #e0e0e0; /* Light text color */
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     cursor: pointer;
 }
 
 .tab-container input[type="radio"]:checked + label {
-    background-color: #0056b3;
+    background-color: #555; /* Slightly lighter background */
 }
 
+/* Tab content styling */
 .tab-content {
     display: none;
     margin-top: 2rem;
 }
 
+/* Display the appropriate tab content */
 #tab1:checked ~ #project1,
 #tab2:checked ~ #project2,
 #tab3:checked ~ #project3 {
     display: block;
 }
 
+/* Image styling */
 .project img {
     max-width: 100%;
     height: auto;
 }
 
+/* Footer styling */
 footer {
-    background: #333;
-    color: #fff;
+    background: #1e1e1e; /* Darker background */
+    color: #e0e0e0; /* Light text color */
     text-align: center;
     padding: 1rem 0;
     position: fixed;
