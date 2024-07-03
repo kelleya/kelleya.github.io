@@ -71,9 +71,8 @@ section {
 }
 
 /* Display the appropriate tab content */
-#tab1:checked ~ #project1,
-#tab2:checked ~ #project2,
-#tab3:checked ~ #project3 {
+#tab1:checked ~ #ttracker,
+#tab2:checked ~ #OIT{
     display: block;
 }
 
